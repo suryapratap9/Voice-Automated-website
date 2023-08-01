@@ -1,0 +1,21 @@
+.problem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    /* justify-content: space-around; */
+    align-items: center;
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    height: 85vh;
+}
+
+.problem h2{
+    margin: 0px;
+    padding: 0px;
+    /* background: red; */
+    height: fit-content;
+    width: fit-content;
+}

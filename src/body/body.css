@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Montserrat:wght@400;900&family=Poppins&family=Press+Start+2P&family=Rock+3D&family=Rowdies&family=Ubuntu:wght@700&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.body-parent
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: black;
+   height: fit-content;
+   padding: 40px;
+}
+
+
+.box{
+   margin: 20px;
+   position: relative;
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   width:400px;
+   height: 100px;
+   overflow: hidden;
+}
+
+.box::after{
+   content: '';
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.box::before{
+   content: '';
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+   animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+   0%
+   {
+      transform: rotate(0deg);
+   }
+   100%
+   {
+      transform: rotate(360deg);
+   }
+}
+
+.box .button{
+   position: absolute;
+   inset: 3px;
+   height: 94px;
+   border-radius: 16px;
+   background: black;
+   z-index: 1;
+   color: white;
+}
+
+.box h2{
+   display: flex;
+   justify-content: center;
+   /* position: relative; */
+   align-items: center;
+   z-index: 2;
+   color: #fff;
+   font-size: 2em;
+}
+
+.button:hover{
+   cursor: pointer;
+   background: rgb(19, 18, 18);
+}
+
+.box:hover::after{
+   content: '';
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   background-image: conic-gradient(transparent, transparent, transparent, #f6ff00);
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.box:hover::before{
+   content: '';
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   background-image: conic-gradient(transparent, transparent, transparent, #f6ff00);
+   animation: animate 6s linear infinite;
+}

@@ -1,0 +1,32 @@
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0px;
+    /* padding-top: 90px; */
+    color: white;
+    height: fit-content;
+}
+
+.mainDiv > h1 {
+    height: fit-content;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+
+img{
+    margin: 60px 0px;
+    border: 2px;
+    height: 400px;
+    width: 1000px;
+
+}
+
+img .photo2{
+    height: 484px;
+    width: 100px;
+}

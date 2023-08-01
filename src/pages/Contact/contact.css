@@ -1,0 +1,29 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    height: 85vh;
+}
+
+.contact .teamHeading{
+    padding-top: 0px;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.contact div{
+    height: fit-content;
+    width: fit-content;
+    padding-bottom  : 30px;
+}
+
+.contact p{
+    height: fit-content;
+    width: fit-content;
+}
